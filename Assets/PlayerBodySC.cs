@@ -28,7 +28,7 @@ public class PlayerBodySC : MonoBehaviour {
         if (playerLife == 0)
         {
             endTime += Time.deltaTime * 0.4f;
-            dameged.material.color = new Color(0f, 0f, 0f, Mathf.Clamp(endTime,0f,200f));
+            dameged.material.color = new Color(0f, 0f, 0f, Mathf.Clamp(endTime,0f,100f));
             gameoverText.SetActive(true);
         }
         else
